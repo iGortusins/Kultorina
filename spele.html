@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kultorīna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start_btn"><button>Sākt spēli</button></div>
+    <div class="info_box">
+        <div class="info-title"><span>Spēles noteikumi</span></div>
+        <div class="info-list">
+            <div class="info">1. Tev tiks dotas <span>15 sekundes</span> katram jautājumam.</div>
+            <div class="info">2. Kad atbilde tiek izvēlēta, to nevar mainīt.</div>
+            <div class="info">3. Pēc laika beigām nav iespējams izvēlēties nevienu atbildi.</div>
+            <div class="info">4. Punkti tiks skaitīti pēc pareizo atbilžu skaita.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Iziet</button>
+            <button class="restart">Turpināt</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Kultorīna</div>
+            <div class="timer">
+                <div class="time_left_txt">Atlicis:</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="que_img">
+                
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="skip_btn">Izlaist</button>
+            <button class="next_btn">Nākamais</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Tu esi pabeidzis šo kultorīnu!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Spēlēt vēl</button>
+            <button class="quit">Iziet</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color:yellow ;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI Semibold";
+  background-color:#7DFF9F;
+}
+
+.navbar {
+  background-color: rgb(125, 255, 159);
+  position: relative;
+  padding: 1em;
+  z-index: 999;
+  transition: top 0.3s;
+}
+
+.navbar .logo {
+  height: 10%; 
+    width: 10%; 
+    object-fit: contain;
+   
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+  float: right;
+  margin-right: 1em;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 0em 0em;
+}
+
+.hero {
+  text-align: center;
+  background-image: url("../images/bg-kultors.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.3em;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: 0.2em;
+}
+.virsraksts-misija{
+  color:rgb(22, 73, 254);
+  -webkit-text-stroke: 1px black;
+  font-size: 45px;
+  font-weight: bold;
+}
+/* .misija{
+  color:black;
+  -webkit-text-stroke: 0.9px black;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right:15em;
+  margin-left:5em;
+
+
+} */
+.noluks{
+  color:black;
+  -webkit-text-stroke: 0.9px black;
+  font-size: 25px;
+  font-weight: bolder;
+  padding-bottom: 3em;
+  margin-bottom: 0;
+}
+
+.primary-cta {
+  background:rgb(43, 255, 184);
+  color: black;
+  text-decoration: none;
+  padding: 0.3em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+  margin: 2em 0 1em 0;
+  border: 3px solid;
+  border-color: #004b30;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.watch-video-cta img {
+  margin-right: 0.5em;
+}
+
+.features-section {
+  background: #20272E;
+  color: white;
+}
+
+ul.features-list {
+  margin: 0;
+  padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.features-list li {
+  font-size: 1.1em;
+  margin: 0 0 2em 1em;
+  position: relative;
+}
+
+ul.features-list li:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/checkmark.webp);
+  background-size: contain;
+  margin-right: 0.5em;
+}
+
+.features-section img {
+  display: none;
+}
+
+.testimonials-section {
+  background: gray;
+  color: white;
+}
+
+.testimonials-section li {
+  background: rgb(35, 24, 234);
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 5em auto 5em auto;
+}
+
+.testimonials-section li img {
+  width: 5em;
+  height: 5em;
+  border: 5px solid orange;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.aboutus {
+  padding: 7em 0em 7em 0em;
+  color: rgb(35, 24, 234);
+}
+
+.textabt {
+  background: #20272E;
+}
+.textabt .container2 {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  padding: 3em 0;
+  margin-top: 0;
+  color: white;
+  font-size: large;
+}
+.textabt span {
+  -webkit-text-stroke: 0.5px rgb(35, 24, 234);
+}
+
+.textabt2 {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  padding: 3em 0;
+  margin-top: 0;
+  color: black;
+  font-size: large;
+}
+.textabt2 span {
+  font-weight: bold;
+  color: rgb(35, 24, 234);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+.features-section {
+  padding-top: 4em;
+  padding-left: 8em;
+  padding-right: 2em;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 35%;
+  right: 0;
+  top: 0;
+  background:rgb(74, 251, 121);
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+} /*# sourceMappingURL=main.css.map */
+.copyright {
+  position: center;
+  background-color: rgb(125, 255, 159);
+  padding: 0.1em 0 1em 0;
+  color: black;
+  font-weight: bold;
+  margin-top: 0;
+}
+.kultorpiem{
+  margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 995px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  ul {
+    display: flex;
+  }
+  a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  ul.primary-nav {
+    margin: 0;
+  }
+  li.current a {
+    font-weight: bold;
+  }
+  li.go-premium-cta a {
+    color: rgb(35, 24, 234);
+    border-radius: 50px;
+    background-color: white;
+    border: 3px solid white;
+    font-weight: bold;
+    margin-left: 1em;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .footer {
+    padding: 0;
+    margin:0;
+  }
+}/*# sourceMappingURL=home.css.map */
